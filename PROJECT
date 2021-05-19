@@ -1,0 +1,18 @@
+domain: lotr.com
+layout: go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: crdrepo
+repo: poc/github.com/ssvaidehi/crdRepo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: lotr.com
+  group: hobbit
+  kind: FrodoBaggins
+  path: poc/github.com/ssvaidehi/crdRepo/api/v1alpha1
+  version: v1alpha1
+version: "3"

@@ -1,0 +1,7 @@
+apiVersion: hobbit.lotr.com/v1alpha1
+kind: FrodoBaggins
+metadata:
+  name: frodobaggins-sample
+spec:
+  # Add fields here
+  foo: bar

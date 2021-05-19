@@ -1,0 +1,24 @@
+# permissions for end users to edit frodobaggins.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: frodobaggins-editor-role
+rules:
+- apiGroups:
+  - hobbit.lotr.com
+  resources:
+  - frodobaggins
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - hobbit.lotr.com
+  resources:
+  - frodobaggins/status
+  verbs:
+  - get
